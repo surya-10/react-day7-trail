@@ -6,8 +6,351 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Andika:wght@400;700&display=swap');
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Hammersmith One', sans-serif;
+}
+.stud-title, .mentor-title{
+  cursor: pointer;
+  font-size: 15px;
+  border: none;
+  padding: 10px 10px;
+  border-radius: 8px;
+}
+.stud-title:hover, .mentor-title:hover{
+  background-color: skyblue;
+  color: white;
+}
+.main-div{
+  display: flex;
+}
+.left-div{
+  width: 20%;
+  background-color: #008B8B;
+  min-height: 100vh;
+}
+
+.stud-data-div{
+  display: flex;
+  margin: 13px auto;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  width: 100%;
+  box-shadow: 0px 0px 10px white, 0px 0px 20px yellow;
+}
+.stud-data-div button{
+  padding: 13px 10px;
+  border: none;
+  width: 100px;
+  border-radius: 10px;
+  background-color: rgb(232, 230, 230);
+}
+.stud-dashboard{
+  margin: 10px;
+  margin-top: 50px;
+  width: 80%;
+}
+.mentor-nav{
+  margin-top: 30px;
+}
+.right-div{
+  width: 78%;
+}
+.headings{
+  margin-top: 50px;
+}
+.headings h3{
+  background-color: darkslateblue;
+  color: white;
+  padding: 5px 8px;
+  text-transform: uppercase;
+  width: 45%;
+  margin: 2px auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.stud-div{
+  display: grid;
+  place-content: center;
+  height: 50vh;
+  width: 100%;
+}
+table, tr, th, td{
+  border: 1px solid rebeccapurple;
+  border-collapse: collapse;
+}
+td{
+  padding: 10px;
+}
+th{
+  padding: 15px;
+}
+.table{
+  font-family: 'Andika', sans-serif;
+  font-weight: 400;
+  color: rgb(45, 45, 45);
+}
+.edit{
+  border: none;
+  padding: 5px 10px;
+  background-color:black;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.delete{
+  border: none;
+  padding: 5px 10px;
+  background-color:crimson;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.edit:hover{
+  color: white;
+  background-color:rgb(88, 86, 86);
+}
+.delete:hover{
+  background-color: rgb(184, 179, 179);
+  color: crimson;
+}
+img{
+  width: 94%;
+  margin: 10px auto;
+  height: 80vh;
+  border-radius: 10px;
+  filter: blur(3px);
+}
+.add-stud-div{
+  width: 100%;
+  
+}
+.form-div{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+input{
+  width: 60%;
+  padding: 12px 10px;
+  border-radius: 15px;
+  border: none;
+  border: 1px solid cadetblue;
+  outline: none;
+}
+input:focus{
+  border: none;
+  box-shadow: 0px 0px 10px skyblue, 0px 0px 15px violet;
+}
+.submit-btn{
+  border: none;
+  background:rgb(73, 125, 146);
+  padding: 10px;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.submit-btn:hover{
+  background-color: skyblue;
+}
+.update-btn{
+  border: none;
+  background:rgb(50, 29, 167);
+  padding: 10px;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.submit-btn:hover{
+  background-color: rgb(62, 37, 205);
+}
+.account{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 10px;
+}
+.bars{
+  display: none;
+}
+.avatar{
+  margin-left: 20px;
+}
+.avatar-title{
+  margin-left: 10px;
+}
+@media only screen and (max-width:750px){
+  .headings h3{
+    background-color: darkslateblue;
+    color: white;
+    padding: 5px 8px;
+    text-transform: uppercase;
+    width: 80%;
+    margin: 2px auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  .stud-data-div button{
+    padding: 13px 10px;
+    border: none;
+    width: 80px;
+    border-radius: 10px;
+    font-size: 10px;
+    background-color: rgb(232, 230, 230);
+  }
+  .stud-title, .mentor-title{
+    cursor: pointer;
+    font-size: 13px;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 8px;
+  }
+  td{
+    padding: 5px;
+  }
+  th{
+    padding: 5px;
+  }
+  .right-div{
+    width: 68%;
+    margin: 10px auto;
+  }
+  input{
+    width: 90%;
+    padding: 8px 10px;
+    border-radius: 15px;
+    border: none;
+    border: 1px solid cadetblue;
+    outline: none;
+  }
+}
+@media only screen and (max-width:550px){
+  .stud-nav, .mentor-nav{
+    position: relative;
+  }
+  
+  .nav1{
+    position: absolute;
+    top: 23px;
+  }
+  .mentor-nav{
+    margin-top: 150px;
+  }
+  .nav2{
+    position: absolute;
+    top: 23px;
+  }
+}
+
+@media only screen and (max-width:480px){
+  .left-div{
+    display: none;
+  }
+  .left-div1{
+    display: block;
+    width: 16%;
+  }
+  .bars{
+    display: block;
+  }
+  .stud-data-div{
+    display: flex;
+    margin: 13px auto;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0px 0px 10px white, 0px 0px 20px yellow;
+  }
+  .stud-data-div button{
+    padding: 5px;
+    border: none;
+    width: 100px;
+    border-radius: 10px;
+    background-color: rgb(232, 230, 230);
+  }
+  .stud-title, .mentor-title{
+    margin-left: -12px;
+    font-size: 10px;
+    padding:5px;
+  }
+  .account{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  img{
+    width: 100%;
+    margin: 10px auto;
+    height: 60vh;
+    border-radius: 10px;
+    filter: blur(3px);
+  }
+  td{
+    padding: 5px;
+    font-size: 12px;
+  }
+  th{
+    padding: 5px;
+    font-size: 12px;
+  }
+  td button{
+    font-size: 12px;
+  }
+  .headings h3{
+    background-color: darkslateblue;
+    color: white;
+    padding: 5px 8px;
+    text-transform: uppercase;
+    width: 95%;
+    margin: 2px auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
+  .stud-data-div{
+    display: flex;
+    margin: 13px auto;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0px 0px 10px grey, 0px 0px 20px cadetblue;
+  }
 }
