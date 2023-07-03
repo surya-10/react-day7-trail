@@ -260,6 +260,7 @@ input:focus{
   .nav1{
     position: absolute;
     top: 23px;
+    z-index: 100;
   }
   .mentor-nav{
     margin-top: 150px;
@@ -267,6 +268,7 @@ input:focus{
   .nav2{
     position: absolute;
     top: 23px;
+    z-index: 100;
   }
 }
 
